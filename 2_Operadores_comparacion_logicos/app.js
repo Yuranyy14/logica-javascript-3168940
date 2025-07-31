@@ -21,8 +21,17 @@
 
 let valorA = Number(prompt('Dame un valor A'))
 let valorB = Number(prompt('Dame un valor B'))
-let resultado = valorA + valorB
-let resultado = valorA - valorB
-let resultado = valorA * valorB
-let resultado = valorA / valorB
-alert("El resultado de los valores son " + resultado)0 
+
+let suma = Number(valorA) + Number(valorB)
+let resta = Number(valorA) - Number(valorB)
+let multiplicacion = Number(valorA) * Number(valorB)
+let division = Number(valorA) / Number(valorB)
+let = Number(valorA) + Number(valorB) * 10 
+
+// console.log("La suma es: "+ suma);
+// console.log("La resta es: "+resta);
+// console.log("La multiplicacion es: "+multiplicacion);
+// console.log("La division es: "+division);
+// console.log("El resultado es: +suma * 10")
+
+console.log (`Tu numero es ${valorA}`)
