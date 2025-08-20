@@ -168,14 +168,13 @@ if (a == b || b == c || a == c) {
 
 // Ejercicio 13
 
-// let datos = []; // Array vacío
+// let datos = []; 
 
 // // Pedimos 3 nombres al usuario
 // datos[0] = prompt("Ingresa el primer dato:");
 // datos[1] = prompt("Ingresa el segundo dato:");
 // datos[2] = prompt("Ingresa el tercer dato:");
 
-// // Mostramos el array completo
 // console.log("Contenido del array:", datos);
 
 //Ejercicio 14
@@ -192,4 +191,5 @@ if (a == b || b == c || a == c) {
 // } while(nombre.toLowerCase() !== "salir");
 
 // console.log("Todos los nombres ingresados:", nombres);
+
 
