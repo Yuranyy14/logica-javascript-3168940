@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="login">
+  <form class="form">
+            <label for="nombre">Nombre:</label>
+            <input 
+            type="text"
+            id="nombre" 
+            name="nombre"
+            class="inputNombre">
+
+
+
+<div class="field">
+    <label for="color">Color</label>
+    <select id="color" name="color">
+      <option value="" disabled selected>Selecciona un color</option>
+    <option value="black">Negro</option>
+                <option value="pink">Rosa</option>
+                <option value="purple">Morado</option>
+                <option value="orange">Naranja</option>
+                <option value="white">Blanco</option>
+                <option value="blue">Azul</option>
+                <option value="green">Verde</option>
+    </select>
+  </div>
+
+
+  <div class="field">
+    <label>Equipo</label>
+    <div class="radio-group">
+      <label><input type="radio" name="equipo" value="gatos" /> Gatos</label>
+      <label><input type="radio" name="equipo" value="mapaches" /> Mapaches</label>
+      <label><input type="radio" name="equipo" value="perros" /> Perros</label>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button type="submit" class="btn">Enviar</button>
+
+  <div class="return">
+    <button type="reset" class="rtr">Volver</button>
+  </div>
+
+  </div>
+</form>
+</div>
+
+<div class="userPage">
+  <img class="img-equipo" src="" alt="">
+  <h1 class="text-saludo">Hola usuario</h1>
+  <p>Perteneces al equipo <span class="text-equipo">Gatos</span>
+  </p>
+</div>
+
+
+<script src="./app.js"></script>
+</body>
+</html>
