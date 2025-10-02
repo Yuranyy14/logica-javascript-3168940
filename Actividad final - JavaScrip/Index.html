@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SonArte — Cómic Digital</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header>
+    <img id="logo" src="img/Recurso.png" alt="Logo SonArte">
+    <img id="logo-flotante" src="img/Recurso.png" alt="Logo Flotante">
+    <h1 id="titulo">SonArte — Cómic Digital</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#proyecto">Proyecto</a>
+      <a href="#personajes">Personajes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  
+  <section id="inicio">
+    <div class="texto">
+      <h2>Bienvenidos a SonArte</h2>
+      <p id="mensaje-bienvenida" class="oculto">Descubre el legado cultural de Joe Arroyo a través de este cómic digital multimedia.</p>
+    </div>
+    <div class="imagen">
+      <div id="vinilo-disco"></div>
+    </div>
+  </section>
+
+  <section id="proyecto">
+    <div class="imagen">
+      <img src="img/joe2.png" alt="Proyecto SonArte">
+    </div>
+    <div class="texto">
+      <h2>Sobre el Proyecto</h2>
+      <p>El proyecto está inspirado en Joe Arroyo: su ritmo, sus letras y su impacto social.</p>
+    </div>
+  </section>
+
+ 
+  <section id="personajes">
+    <div class="texto" style="text-align:center;width:100%;">
+      <h2>Personajes Clave</h2>
+      <p>Haz clic sobre la imagen para conocer más detalles.</p>
+    </div>
+    <div class="cards">
+      <div class="card" data-nombre="Joe Arroyo" data-info="Un ícono de la música colombiana..." data-img="img/joe.png">
+        <img src="img/joe.png" alt="Joe Arroyo">
+      </div>
+      <div class="card" data-nombre="Manuel Villanueva" data-info="Su mentor y descubridor..." data-img="img/villanueva.png">
+        <img src="img/villanueva.png" alt="Manuel Villanueva">
+      </div>
+      <div class="card" data-nombre="Fruko" data-info="Productor y mentor que renovó la salsa colombiana..." data-img="img/fruko.png">
+        <img src="img/fruko.png" alt="Fruko">
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="contacto">
+    <div class="texto">
+      <h2>Contacto y Apoyo</h2>
+      <p>¿Quieres saber más sobre SonArte? Llena el formulario y comparte este legado cultural.</p>
+    </div>
+    <div class="imagen">
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+      <p id="mensaje-confirmacion"></p>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <p>© 2025 SonArte | Proyecto formativo</p>
+  </footer>
+
+ 
+  <div id="modalPersonaje" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+      <h3 id="modal-titulo"></h3>
+      <img id="modal-imagen" src="" alt="Imagen del personaje">
+      <p id="modal-info"></p>
+    </div>
+  </div>
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
